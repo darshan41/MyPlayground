@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Chapter1'/>
+        <page name='Chapter2'/>
+        <page name='Chapter3'/>
+        <page name='FunPage'/>
+        <page name='Chapter4-LinkedList'/>
+        <page name='Chapter5-Stacks'/>
+        <page name='Chapter4-Queues'/>
+        <page name='Chapter-6-PlayWithAlgos'/>
+        <page name='FunPage-Trie'/>
+        <page name='Pattern'/>
+        <page name='Problems'/>
+        <page name='Extensions'/>
+        <page name='QueueRelatedStuffs'/>
+        <page name='UnsafeSideSwift'/>
+    </pages>
+</playground>
