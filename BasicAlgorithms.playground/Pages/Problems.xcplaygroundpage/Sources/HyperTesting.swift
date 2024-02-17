@@ -7,8 +7,24 @@ public protocol HyperTesting {
     func tryBruteForceMethod() -> CustomStringConvertible
     
     @discardableResult
+    func tryBetter() -> CustomStringConvertible
+    
+    @discardableResult
     func tryOptimised() -> CustomStringConvertible
     
+}
+
+public extension HyperTesting {
+    
+    @discardableResult
+    func tryBetter() -> CustomStringConvertible {
+        tryBruteForceMethod()
+    }
+    
+    @discardableResult
+    func tryOptimised() -> CustomStringConvertible {
+        tryBetter()
+    }
 }
 
 public class ProblemsTester {
@@ -16,6 +32,7 @@ public class ProblemsTester {
     public enum Problem: String,CaseIterable {
         case twoSum
         case buySellStockTimings
+        case leadersInArray
     }
     
     public init() { }
@@ -26,6 +43,8 @@ public class ProblemsTester {
             return TwoSum()
         case .buySellStockTimings:
             return BuySellStockTimings()
+        case .leadersInArray:
+            return LeadersInArray()
         }
     }
 }

@@ -32,6 +32,11 @@ public extension TwoSum {
     }
     
     @discardableResult
+    func tryBetter() -> CustomStringConvertible {
+        tryBruteForceMethod()
+    }
+    
+    @discardableResult
     func tryOptimised() -> CustomStringConvertible {
         var map = [Int: Int]()
         for (i, n) in elements.enumerated() {

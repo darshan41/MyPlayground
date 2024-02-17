@@ -2,10 +2,13 @@
 
 import Foundation
 
-let testCase = ProblemsTester.testFor(.twoSum)
+//let testCase = ProblemsTester.testFor(.twoSum)
+//let testCase = ProblemsTester.testFor(.buySellStockTimings)
+let testCase = ProblemsTester.testFor(.leadersInArray)
 
 //testCase.tryBruteForceMethod()
-testCase.tryOptimised()
+print(testCase.tryBruteForceMethod().description)
+//print(testCase.tryOptimised().description)
 
 
 
